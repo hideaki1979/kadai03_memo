@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts指定はreset.cssよりも前に指定しないと適用されない -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <title>メモアプリ</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>メモアプリ</h1>
+            <div class="button-container">
+                <a href="edit.html" id="new-regist"><span class="btn-name">新規登録</span></a>
+                <a href="#" id="all-delete"><span class="btn-name">全件削除</span></a>
+                <a href="#" id="init-regist"><span class="btn-name">初期登録</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <table id="memolist"></table>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
