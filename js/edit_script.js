@@ -33,7 +33,7 @@ $("#edit").on("click", function(){
     const key = $("#title").val();
     const value = $("#memo").val();
     localStorage.setItem(key, value);
-    alert(`メモ情報を登録しました。キー：${key}`);
+    alert(`メモ情報を更新しました。キー：${key}`);
     mainScreen();
 });
 
@@ -41,7 +41,7 @@ $("#edit").on("click", function(){
 $("#delete").on("click", function(){
     const key = $("#title").val();
     localStorage.removeItem(key);
-    alert(`メモ情報を登録しました。キー：${key}`)
+    alert(`メモ情報を削除しました。キー：${key}`)
     mainScreen();
 });
 
