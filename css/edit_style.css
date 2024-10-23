@@ -57,12 +57,16 @@ a {
     width: 100px;
     background-color: rgb(30, 177, 218);
     font-size: 1rem;
-    /* line-height: 10px; */
     margin-right: 10px;
     height: 40px;
     border-radius: 30px;
     box-shadow: 0 5px 5px darkblue;
     transition: .3s;
+}
+
+a:hover {
+    background-color: aqua;
+    color: darkblue;
 }
 
 a:active {

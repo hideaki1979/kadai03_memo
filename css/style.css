@@ -41,6 +41,11 @@ a {
     box-shadow: 0 5px 5px darkblue;
 }
 
+a:hover {
+    background-color: aqua;
+    color: darkblue;
+}
+
 .btn-name {
     position: relative;
     top: 8px
@@ -67,6 +72,12 @@ th, td {
 th {
     width: 30%;
     background-color: lightgray;
+}
+
+th:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    color: cadetblue;
 }
 
 td {
