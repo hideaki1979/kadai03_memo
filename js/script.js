@@ -35,7 +35,8 @@ $("#all-delete").on("click", function(){
 $("#memolist").on("click", "th", function(){
     const key = $(this).text();
     // console.log(key);
-    location.href = `edit.html?key=${key}`;
+    // location.href = `edit.html?key=${key}`;
+    location.href = `edit.html?key=` + decodeURIComponent(key);
 });
 
 // tableリスト出力する

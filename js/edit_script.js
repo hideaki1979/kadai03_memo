@@ -2,12 +2,15 @@ window.addEventListener('load', function(){
     const url = this.location.search;
     // console.log(url);
     const param = url.split('=');
-    const key = param[1];
-    if(key !== ""){
+    // const key = param[1];
+    const key = decodeURIComponent(param[1]);
+    if(key !== ("" || "undefined")){
         const value = this.localStorage.getItem(key);
-        // console.log(key);
+        console.log(key);
         $("#title").val(key);
         $("#memo").val(value);
+        $("#title").attr("disabled", true);
+        $("#regist").disabled = true;
     }
 });
 
